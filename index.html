@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>主页</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+  <!-- <link rel="stylesheet" href="css/index/bootstrap.min.css"> -->
+  <!-- <link rel="stylesheet" href="css/all.css"> -->
+
+  <!-- <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,400italic,600,700,900' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700' rel='stylesheet' type='text/css'> -->
+  <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="container">
+      <div class="navbar menubar" id="menu">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle menu-button" data-toggle="collapse" data-target="#myNavbar">
+              <span class="glyphicon glyphicon-align-justify set"></span> </button>
+            <a class="navbar-brand logo" href="#">浩浩滴车 </a> </div>
+          <div class="navdiv">
+            <nav class="collapse navbar-collapse navset" id="myNavbar" role="navigation">
+              <ul class="nav navbar-nav navbar-right navstyle navb">
+                <li><a href="#" class="page-scroll active">首页</a></li>
+                <li><a href="#features" class="page-scroll">订单</a></li>
+                <li><a href="#about" class="page-scroll">关于</a></li>
+                <li><a href="Personal information.html" class="page-scroll">个人信息</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="alert alert-warning alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+        aria-hidden="true">&times;</span></button>
+    <strong>公告!</strong> 深珠线，广珠线客户请在“AA巴士通”公众号预定订票！
+  </div>
+  <div class="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+          <div class="schbox">
+            <div class="col-md-6 col-sm-12 col-xs-12 appointment">
+              <div class="schbox-title">
+                <h2>相约</h2>
+              </div>
+              <form role="form" class="appointform">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <!-- <div class="form-group ">
+                    <div class="input-group-btn">
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        地点
+                        <span class="caret"></span>
+                      </button>
+                      <ul id="project" class="dropdown-menu">
+                        <li value="account"><a href="#" rel="external nofollow" rel="external nofollow"
+                            rel="external nofollow">广州</a></li>
+                        <li class="divider"></li>
+                        <li value="drive"><a href="#" rel="external nofollow" rel="external nofollow"
+                            rel="external nofollow">深圳</a></li>
+                        <li class="divider"></li>
+                        <li value="qing"><a href="#" rel="external nofollow" rel="external nofollow"
+                            rel="external nofollow">福建</a></li>
+                      </ul>
+                    </div>
+                    <input type="text" class="form-control  " id="proname" placeholder="起点">
+                  </div> -->
+
+                  <div class="form-group">
+                    <!--  input -->
+                    <div class="input-group-btn btn-group">
+                      <button type="button" class="btn btn-default dropdown-toggle " data-toggle="dropdown"
+                        aria-expanded="false">
+                        地点
+                        <span class="caret"></span></button>
+                      <ul id="project" class="dropdown-menu" role="menu">
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">深圳</a></li>
+                        <li><a href="#">东莞</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">江东</a></li>
+                      </ul>
+                    </div><!-- /btn-group -->
+                    <input type="text" class="form-control" id="proname" placeholder="起点">
+                  </div><!-- /input-group -->
+
+
+                  <!-- <div class="form-group">
+                  <input type="text" class="form-control" id="phone" placeholder="Phone">
+                </div> -->
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 ">
+
+                    <div class="form-group">
+
+                        <div class="input-group-btn btn-group">
+                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                            aria-expanded="false">
+                            地点
+                            <span class="caret"></span>
+                          </button>
+                          <ul id="project1" class="dropdown-menu" role="menu">
+                            <li value="account">广州</li>
+                            <li class="divider"></li>
+                            <li value="drive">深圳</li>
+                            <li class="divider"></li>
+                            <li value="qing">福建</li>
+                          </ul>
+                        </div>
+                        <input type="text" class="form-control" id="proname1" placeholder="终点">
+                      </div>
+
+
+
+                  <div class="form-group  py-4">
+
+
+
+                    <input type="date" class="form-control" id="date" placeholder="Date">
+                  </div>
+                  <!-- <div class="form-group">
+                  <textarea class="form-control" id="message" placeholder="Message" rows="3"></textarea>
+                </div> -->
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                  <button type="submit" class="btn orange">确认</button>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 working">
+              <div class="schbox-title">
+                <h2>伦家的工作时间</h2>
+              </div>
+              <div class="col-md-5 col-sm-5 col-xs-12">
+                <div class="timing">
+                  <h6>星期一 - 星期五</h6>
+                  <p><strong>10 AM - 18 PM</strong></p>
+                  <h6>星期六 - 星期日</h6>
+                  <p><strong>10 AM - 14 PM</strong></p>
+                </div>
+              </div>
+              <div class="col-md-7 col-sm-7 col-xs-12">
+                <div class="emergency">
+                  <p>紧急联系电话</p>
+                  <p class="emer"><i class="fa fa-phone white"></i>123-456-789</p>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <p class="address">地址</p>
+                <div class="addressdiv">
+                  <p>广从南路广州大学华软软件学院</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <h3 class="top-head">我们的服务</h3>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="servicebox text-center"> <img src="images/car.png" />
+            <h4>车型多样</h4>
+            <p>为你提供5-50座的，经济型，舒适型，豪华型不同级别的巴士，满足不同人群的不同需求</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="servicebox text-center"> <img src="images/carman.png" />
+            <h4>优选司导</h4>
+            <p>5星标准评选优质司导，确保你的出行安全，提供5星级管家式的贴心服务</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="servicebox text-center"> <img src="images/call.png" />
+            <h4>客服保障</h4>
+            <p>客服团队7*24小时无休，你可通过在线客服、电话或者微信联系，及时解决问题</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <h3 class="top-head">About Us</h3>
+      </div>
+      <div class="col-md-5 image col-sm-5 col-xs-12"> <img src="images/about.jpg"/> </div>
+      <div class="col-md-7 col-sm-7 col-xs-12">
+        <div class="panel-group" id="accordion">
+          <div class="panel">
+            <div class="panel-heading">
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="toggletab">Dental Center</a> </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse in">
+              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.</div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-heading">
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="toggletab"> Cancer Center</a> </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.</div>
+            </div>
+          </div>
+          <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >手机网站模板</a></div>
+          <div class="panel">
+            <div class="panel-heading">
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="toggletab"> Heart Center</a> </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <p class="desc">Nam commodo quam ac luctus sagittis. Donec quam dui, facilisis a placerat at, pretium vitae metus. Pellentesque tincidunt ex quis suscipit pellentesque. Curabitur eu mauris nisl. Suspendisse eu erat congue enim fringilla blandit et sit amet elit. Morbi sodales, ex quis hendrerit cursus, ante augue rutrum arcu, posuere efficitur orci mi a leo. Donec sem purus, pretium eleifend justo eu, cursus bibendum quam. Suspendisse efficitur euismod erat, nec tempus metus pulvinar sit amet. Donec accumsan velit nec nisi porttitor, sit amet tempus elit tincidunt. Vivamus id sapien augue. In luctus accumsan nibh quis sagittis. Vivamus commodo justo vel laoreet tincidunt. Vestibulum efficitur tincidunt ex, ut feugiat nisi malesuada a. Nunc vulputate varius sem, tristique mattis dolor consequat a. Quisque varius blandit velit sed bibendum. </p>
+      </div>
+    </div>
+  </div>
+</div> -->
+  <!-- <div class="doctors">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <h3 class="top-head">Our Doctors</h3>
+      </div>
+      <div class="col-md-12 col-xs-12 col-sm-12">
+        <div class="col-md-3 col-sm-6 col-xs-6">
+          <div class="docbox"> <img src="images/team-img-01.jpg"/>
+            <h4>Mark Henry</h4>
+            <p>Family Physician</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6">
+          <div class="docbox"> <img src="images/team-img-02.jpg"/>
+            <h4>Lita Dicosta</h4>
+            <p>Nutrionist</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6">
+          <div class="docbox"> <img src="images/team-img-03.jpg"/>
+            <h4>John Cena</h4>
+            <p>Heart Specialist</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6">
+          <div class="docbox"> <img src="images/team-img-02.jpg"/>
+            <h4>Trisha kris</h4>
+            <p>Dentist</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="testimonial">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <h3 class="top-head">Our Testimonial</h3>
+      </div>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="testbox">
+          <div class="clientimg"> <img src="images/team-img-02.jpg"/> </div>
+          <div class="test">
+            <p>Nam commodo quam ac luctus sagittis. Donec quam dui, facilisis a placerat at, pretium vitae metus. Pellentesque tincidunt ex quis suscipit pellentesque. Curabitur eu mauris nisl.</p>
+          </div>
+          <div class="clientname">
+            <p>Angela Mathew</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="testbox">
+          <div class="clientimg"> <img src="images/team-img-01.jpg"/> </div>
+          <div class="test">
+            <p>Nam commodo quam ac luctus sagittis. Donec quam dui, facilisis a placerat at, pretium vitae metus. Pellentesque tincidunt ex quis suscipit pellentesque. Curabitur eu mauris nisl.</p>
+          </div>
+          <div class="clientname">
+            <p>Angela Mathew</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="testbox">
+          <div class="clientimg"> <img src="images/team-img-03.jpg"/> </div>
+          <div class="test">
+            <p>Nam commodo quam ac luctus sagittis. Donec quam dui, facilisis a placerat at, pretium vitae metus. Pellentesque tincidunt ex quis suscipit pellentesque. Curabitur eu mauris nisl.</p>
+          </div>
+          <div class="clientname">
+            <p>Angela Mathew</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="testbox">
+          <div class="clientimg"> <img src="images/team-img-02.jpg"/> </div>
+          <div class="test">
+            <p>Nam commodo quam ac luctus sagittis. Donec quam dui, facilisis a placerat at, pretium vitae metus. Pellentesque tincidunt ex quis suscipit pellentesque. Curabitur eu mauris nisl.</p>
+          </div>
+          <div class="clientname">
+            <p>Angela Mathew</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="quicklinks">
+          <h4 class="footerh">Quick Links</h4>
+          <ul>
+            <li><i class="fa fa-angle-right"></i> <a href="#">Home</a></li>
+            <li><i class="fa fa-angle-right"></i> <a href="#">About us</a></li>
+            <li><i class="fa fa-angle-right"></i> <a href="#">Doctors</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="quickcontact">
+          <h4 class="footerh">Quick Contact</h4>
+          <ul>
+            <li><i class="fa fa-phone"></i> 123456789</li>
+            <li><i class="fa fa-envelope"></i> abc@website.com</li>
+            <li><i class="fa fa-map-marker"></i> 2B Barcelon, Newyork -32011</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="follow">
+          <h4 class="footerh">Follow us</h4>
+          <ul class="footer-social text-center">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+  <!-- guanggao -->
+  <marquee scrollamount="2" scrolldelay="1" direction="right" height="150" behavior="alternate">
+   
+      
+       
+     <img  src="images/guanggao2.jpg">
+       <img src="images/guanggao3.jpg">
+       <!-- <img src="华软简介/466791070359179358.jpg">
+       <img src="华软简介/578917791000826854.jpg">
+       <img src="华软简介/583947709142996449.jpg">
+       <img src="华软简介/746747096154265197.jpg"> -->
+       
+       
+       
+       
+       </marquee>
+
+·
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/index/bootstrap.js"></script>
+  <script src="js/index/jquery-3.4.0.js"> </script>
+  <script src="js/index/popper.min.js"></script>
+  <script>
+
+
+    $("#project").on("click", "li", function () {
+      $("#proname").val($(this).text());
+    });
+
+    $("#project1").on("click", "li", function () {
+      $("#proname1").val($(this).text());
+    });
+  </script>
+</body>
+
+</html>
